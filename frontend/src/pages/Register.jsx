@@ -349,8 +349,8 @@ const Register = () => {
                     className="mt-1 w-full border border-violet-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-violet-400 focus:border-violet-400"
                   >
                     <option value="user">User</option>
-                    <option value="volunteer">Volunteer</option>
-                    <option value="admin">Admin</option>
+                    {/* <option value="volunteer">Volunteer</option>
+                    <option value="admin">Admin</option> */}
                   </select>
                 </div>
 
