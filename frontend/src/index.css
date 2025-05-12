@@ -1,0 +1,79 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway+Dots&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+@plugin "tailwind-scrollbar";
+
+/* @font-face {
+  font-family: "Delm";
+  src: url("./assets/fonts/Delm-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+} */
+
+/* @layer base {
+  body {
+    @apply font-roboto overflow-hidden overflow-y-auto scrollbar-thin scrollbar-thumb-violet-600 scrollbar-track-gray-200;
+  }
+} */
+
+@layer base {
+  html {
+    @apply scrollbar-thin scrollbar-thumb-violet-600 scrollbar-track-gray-200 overflow-x-hidden overflow-y-auto;
+  }
+
+  body {
+    @apply font-roboto;
+  }
+}
+
+/* Hide scroll arrows in WebKit browsers */
+/* .scrollbar-hide-arrows::-webkit-scrollbar-button {
+  display: none;
+}
+
+.custom-scroll::-webkit-scrollbar-button {
+  display: none;
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  width: 10px;
+} */
+
+@theme {
+  --font-roboto: "Roboto", sans-serif;
+
+  --animate-shimmer: shimmer 2s linear infinite;
+
+  @keyframes shimmer {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+
+@keyframes slideDown {
+  0%{ 
+     opacity: 0, transform: translateY(-10px);
+       }
+    100%{ 
+        opacity: 1, transform: translateY(0) 
+      }
+    }
+}
+
+/* @theme {
+  --animate-gradient-x: gradient-x 3s linear infinite;
+
+  @keyframes gradient-x {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+} */
