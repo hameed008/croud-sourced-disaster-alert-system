@@ -15,6 +15,7 @@ import IntroductionGuide from "./pages/IntroductionGuide";
 import { useLocation } from 'react-router-dom';
 import PaymentSuccess from "./components/PaymentSuccess";
 import AlertBanner from "./components/AlertBanner";
+import { useAuth } from './contexts/AuthContext';
 //import NotificationTab from "./components/NotificationTab";
 
 
@@ -30,6 +31,8 @@ function ScrollToTop() {
 
 function App() {
   // console.log('yes')
+  //console.log(useAuth())
+
   return (
     <>
 

@@ -16,6 +16,7 @@ const Login = () => {
   const [errors, setErrors] = useState({});
   const [submitError, setSubmitError] = useState("");
   const navigate = useNavigate();
+  //console.log(useAuth())
   const { login } = useAuth();
 
   const validate = () => {

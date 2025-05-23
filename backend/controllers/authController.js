@@ -189,7 +189,7 @@ export const verifyOTP = async (req, res) => {
   if (user.notificationPreferences?.email) {
     await sendEmail({
       to: email,
-      subject: "🎉 Welcome to ResQMap, ${name}! Let's make safety smarter together.",
+      subject: `🎉 Welcome to ResQMap, ${name}! Let's make safety smarter together.`,
       html: registrationEmail(name)
     });
   }
