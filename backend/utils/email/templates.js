@@ -15,7 +15,7 @@ export const registrationEmail = (name) => `
       <li>🛰️ Stay updated with real-time alerts</li>
     </ul>
     <div style="text-align: center; margin: 20px 0;">
-      <a href="https://resqmap.vercel.app" style="background-color: #03BD62; color: white; padding: 12px 20px; border-radius: 6px; text-decoration: none;">🚀 Get Started</a>
+      <a href="https://resqmap.hameedkhan.in" style="background-color: #03BD62; color: white; padding: 12px 20px; border-radius: 6px; text-decoration: none;">🚀 Get Started</a>
     </div>
     <p style="color: gray;">Together, we make disaster response faster and better. Stay safe!</p>
     <p>— Team <strong>ResQMap</strong></p>
